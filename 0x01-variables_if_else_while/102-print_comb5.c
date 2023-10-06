@@ -24,7 +24,7 @@ for (i = '0'; i <= '9'; i++)
 	{
 		for (y = '0'; y <= '9'; y++)
 		{
-			if (x + y > i + j)
+			if (x * 10 + y > i * 10 + j)
 			{
 				putchar(i);
 				putchar(j);
