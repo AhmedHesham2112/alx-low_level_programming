@@ -30,7 +30,7 @@ if (n <= 15 && n > 0)
 				_putchar(',');
 				_putchar(' ');
 			}
-			else if (x > 10 && x < 100)
+			else if (x >= 10 && x < 100)
 			{
 				_putchar(' ');
 				_putchar(x / 10 + '0');
@@ -40,7 +40,7 @@ if (n <= 15 && n > 0)
 				_putchar(',');
 				_putchar(' ');
 			}
-			else if (x > 100)
+			else if (x >= 100)
 			{
 				_putchar(x / 100 + '0');
 				_putchar(x / 10 % 10 + '0');
