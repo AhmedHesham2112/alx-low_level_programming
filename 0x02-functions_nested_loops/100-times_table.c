@@ -24,7 +24,7 @@ if (n <= 15 && n > 0)
 					_putchar(' ');
 					_putchar(' ');
 				}
-				_putchar(n + '0');
+				_putchar(x + '0');
 				if (j == n)
 					continue;
 				_putchar(',');
