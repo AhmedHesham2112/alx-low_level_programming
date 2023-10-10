@@ -38,9 +38,9 @@ if (n <= 15 && n > 0)
 			}
 			else if (x > 100)
 			{
-				_putchar(n / 100 + '0');
-				_putchar(n / 10 % 10 + '0');
-				_putchar(n % 10 + '0');
+				_putchar(x / 100 + '0');
+				_putchar(x / 10 % 10 + '0');
+				_putchar(x % 10 + '0');
 				if (j == n)
 					continue;
 				_putchar(',');
@@ -53,6 +53,6 @@ if (n <= 15 && n > 0)
 else if (n == 0)
 	{
 		_putchar('0');
-		_putchar('\n');			
+		_putchar('\n');
 	}
 }
