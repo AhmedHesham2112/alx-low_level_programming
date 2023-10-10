@@ -20,15 +20,19 @@ if (n <= 15 && n > 0)
 			if (x < 10)
 			{
 				if (j != 0)
+				{
 					_putchar(' ');
+					_putchar(' ');
+				}
 				_putchar(n + '0');
 				if (j == n)
 					continue;
 				_putchar(',');
 				_putchar(' ');
 			}
-			else if (x < 100)
+			else if (x > 10 && x < 100)
 			{
+				_putchar(' ');
 				_putchar(x / 10 + '0');
 				_putchar(x % 10 + '0');
 				if (j == n)
