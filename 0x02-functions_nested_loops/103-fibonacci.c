@@ -13,7 +13,6 @@ int main(void)
 	long int sum;
 	long int evens = 2;
 
-	printf("%ld, %ld, ", a, b);
 	while (b > 4000000)
 	{
 		sum = a + b;
