@@ -19,7 +19,7 @@ int main(void)
 		sum = a + b;
 		a = b;
 		b = sum;
-		if (i == 97)
+		if (i == 96)
 			printf("%ld\n", sum);
 		else
 			printf("%ld, ", sum);
