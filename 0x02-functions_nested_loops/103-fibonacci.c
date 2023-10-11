@@ -13,13 +13,13 @@ int main(void)
 	long int sum;
 	long int evens = 2;
 
-	while (b > 4000000)
+	while (b < 4000000)
 	{
 		sum = a + b;
 		a = b;
 		b = sum;
-		if (sum % 2 == 0 && sum < 4000000)
-			evens += sum;
+		if (b % 2 == 0 && b < 4000000)
+			evens += b;
 	}
 	printf("%ld\n", evens);
 	return (0);
