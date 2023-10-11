@@ -12,7 +12,6 @@ int main(void)
 	long int b = 2;
 	long int sum;
 	long int evens = 2;
-	int i;
 
 	printf("%ld, %ld, ", a, b);
 	while (b > 4000000)
