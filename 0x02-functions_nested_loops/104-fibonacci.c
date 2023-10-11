@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	long int a = 1;
-	long int b = 2;
-	long int sum;
+	unsigned long int a = 1;
+	unsigned long int b = 2;
+	unsigned long int sum;
 	int i;
 
 	printf("%ld, %ld, ", a, b);
