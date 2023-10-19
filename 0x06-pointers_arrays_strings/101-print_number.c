@@ -4,6 +4,7 @@
  * print_number - Prints an integer.
  * @n: The integer to print.
  */
+
 void print_number(int n)
 {
 	int divisor = 1;
@@ -14,7 +15,7 @@ void print_number(int n)
 		_putchar('-');
 		n = -n;
 	}
-	temp =n;
+	temp = n;
 	while (temp / 10 != 0)
 	{
 		divisor *= 10;
@@ -24,8 +25,9 @@ void print_number(int n)
 	while (divisor != 0)
 	{
 		int digit = n / divisor;
+
 		_putchar(digit + '0');
- 		n %= divisor;
+		n %= divisor;
 		divisor /= 10;
 	}
 }
