@@ -26,10 +26,15 @@ unsigned int _strspn(char *s, char *accept)
 			if (accept[a] == s[b])
 			{
 				if (b > c)
+				{
 					c = b;
-				break;
+					break;
+				}
 			}
 		}
 	}
-	return (c + 1);
+	if (c == 0)
+		return (c);
+	else
+		return (c + 1);
 }
