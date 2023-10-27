@@ -9,26 +9,27 @@
 
 int main(int argc, char *argv[])
 {
+	int change = 0;
+	int reminder = 0;
+
 	if (argc != 2)
 		printf("Error\n");
 	else
 	{
-		if (atoi(argv[1]) < 0)
+		if (atoi(argv[1]) <= 0)
 			printf("0\n");
 		else
 		{
-			if (atoi(argv[1]) / 25 != 0)
-				printf("%d\n", (atoi(argv[1]) / 25) + (atoi(argv[1]) % 25));
-			else if (atoi(argv[1]) / 10 != 0)
-				printf("%d\n", (atoi(argv[1]) / 10) + (atoi(argv[1]) % 10));
-			else if (atoi(argv[1]) / 5 != 0)
-				printf("%d\n", (atoi(argv[1]) / 5) + (atoi(argv[1]) % 5));
-			else if (atoi(argv[1]) / 2 != 0)
-				printf("%d\n", (atoi(argv[1]) / 2) + (atoi(argv[1]) % 2));
-			else if (atoi(argv[1]) / 1 != 0)
-				printf("%d\n", (atoi(argv[1]) / 1) + (atoi(argv[1]) % 1));
-			else
-				printf("0\n");
+			change = atoi(argv[1]) / 25;
+			reminder = atoi(argv[1]) % 25;
+			change += reminder / 10;
+			reminder = reminder % 10;
+			change += reminder / 5;
+			reminder = reminder % 5;
+			change += reminder / 2;
+			reminder = reminder % 2;
+			change += reminder / 1;
+			printf("%d\n", change);
 		}
 	}
 	return (0);
