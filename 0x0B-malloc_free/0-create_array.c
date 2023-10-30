@@ -15,10 +15,14 @@ char *create_array(unsigned int size, char c)
 	char *s;
 
 	s = malloc(sizeof(*s) * size);
-
+	if (s == NULL)
+	{
+		printf("Memory allocation failed.\n");
+		return NULL;
+	}
 	if (size == 0)
 	{
-		return ('\0');
+		return (NULL);
 	}
 	for (i = 0; i < size; i++)
 	{
