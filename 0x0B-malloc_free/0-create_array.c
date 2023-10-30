@@ -18,7 +18,7 @@ char *create_array(unsigned int size, char c)
 	if (s == NULL)
 	{
 		printf("Memory allocation failed.\n");
-		return NULL;
+		return (NULL);
 	}
 	if (size == 0)
 	{
