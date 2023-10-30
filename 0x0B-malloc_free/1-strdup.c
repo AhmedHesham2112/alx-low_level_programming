@@ -11,15 +11,15 @@
 
 char *_strdup(char *str)
 {
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	unsigned int i = 0;
 	unsigned int j;
 	char *c;
 
-	if (str == NULL)
-	{
-		printf("Memory allocation failed.\n");
-		return (NULL);
-	}
 	while (str[i] != '\0')
 	{
 		i++;
