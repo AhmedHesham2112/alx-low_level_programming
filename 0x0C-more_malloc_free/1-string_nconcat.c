@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-char *strcon2(char *s1, char *s2, unsigned int n);
+
 /**
  * string_nconcat - concatenates two strings.
  * @s1: first string.
@@ -17,8 +17,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL && s2 == NULL)
 	{
-		c = "";
-		return (c);
+		return (NULL);
 	}
 	if (s1 != NULL)
 	{
