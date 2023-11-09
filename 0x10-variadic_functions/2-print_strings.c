@@ -1,10 +1,10 @@
 #include "variadic_functions.h"
 
 /**
- * print_strings - prints stringss, followed by a new line.
+ * print_strings - prints strings, followed by a new line.
  * @separator: the the string to be printed between strings
  * @n: number of strings passed to the function
- * Return: the sum of all the numbers.
+ * Return: all the strings.
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
