@@ -2,7 +2,7 @@
 
 /**
  * print_strings - prints stringss, followed by a new line.
- * @separator: the the string to be printed between numbers
+ * @separator: the the string to be printed between strings
  * @n: number of strings passed to the function
  * Return: the sum of all the numbers.
  */
@@ -15,10 +15,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
-		if (separator != NULL && i + 1 != n)
-			printf("%s%s", va_arg(args, char *), separator);
+		char *str = va_arg(args, char *);
+
+		if (str == NULL)
+			printf("(nil)");
 		else
-			printf("%s", va_arg(args, char *));
+			printf("%s", str);
+		if (separator != NULL && i + 1 != n)
+			printf("%s", separator);
 	}
 	va_end(args);
 	printf("\n");
