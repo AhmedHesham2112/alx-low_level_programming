@@ -1,8 +1,8 @@
 #include "variadic_functions.h"
 
 /**
- * sum_them_all - prints a name.
- * @n: the first number to sum
+ * sum_them_all - sums all numbers.
+ * @n: the first number to sum.
  *
  * Return: the sum of all the numbers.
  */
