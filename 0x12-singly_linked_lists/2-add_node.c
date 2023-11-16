@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_node - A function that prints a linked list
+ * add_node - A function that adds a node
  * @head: pointer to head of list
  * @str: the string to be passed to the node
  * Return: number of nodes in list as size_t
