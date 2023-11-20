@@ -9,7 +9,6 @@
 size_t print_listint(const listint_t *h)
 {
 	listint_t *new_h = malloc(sizeof(listint_t));
-	listint_t *new_next = malloc(sizeof(listint_t));
 	int i = 0;
 
 	new_h->n = h->n;
@@ -17,9 +16,7 @@ size_t print_listint(const listint_t *h)
 	while (new_h->next != NULL)
 	{
 		printf("%d\n", new_h->n);
-		new_next = new_h->next;
-		new_h->n = new_next->n;
-		new_h->next = new_next->next;
+		new_h = new_h->next;
 		i++;
 	}
 	printf("%d\n", new_h->n);
