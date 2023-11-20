@@ -9,7 +9,7 @@
 size_t print_listint(const listint_t *h)
 {
 	listint_t *new_h = malloc(sizeof(listint_t));
-	int i = 0;
+	size_t i = 0;
 
 	new_h->n = h->n;
 	new_h->next = h->next;
