@@ -8,7 +8,7 @@
 
 int pop_listint(listint_t **head)
 {
-	listint_t *temp = malloc(sizeof(listint_t));
+	listint_t *temp;
 	int new_n;
 
 	if (!head)
