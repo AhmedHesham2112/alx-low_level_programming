@@ -8,17 +8,14 @@
 
 size_t print_listint(const listint_t *h)
 {
-	listint_t *new_h = malloc(sizeof(listint_t));
 	size_t i = 0;
 
-	new_h->n = h->n;
-	new_h->next = h->next;
-	while (new_h->next != NULL)
+	while (h)
 	{
-		printf("%d\n", new_h->n);
-		new_h = new_h->next;
+		printf("%d\n", h->n);
+		h = h->next;
 		i++;
 	}
-	printf("%d\n", new_h->n);
+	printf("%d\n", h->n);
 	return (i + 1);
 }
