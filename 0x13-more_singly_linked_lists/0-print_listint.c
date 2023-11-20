@@ -12,8 +12,6 @@ size_t print_listint(const listint_t *h)
 	listint_t *new_next = malloc(sizeof(listint_t));
 	int i = 0;
 
-	if (h->n == NULL)
-		return (NULL);
 	new_h->n = h->n;
 	new_h->next = h->next;
 	while (new_h->next != NULL)
