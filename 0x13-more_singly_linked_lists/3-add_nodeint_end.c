@@ -6,7 +6,7 @@
  * @n: the int to be passed to the node
  * Return: number of nodes in list as size_t
  */
-listint_t *add_nodeint_end(listint_t **head, const char *n)
+listint_t *add_nodeint_end(listint_t **head, const int *n)
 {
 	listint_t *new_end = malloc(sizeof(listint_t)), *temp = *head;
 
@@ -21,8 +21,8 @@ listint_t *add_nodeint_end(listint_t **head, const char *n)
 		*head = new_end;
 		return (new_end);
 	}
-		while (temp->next)
-			temp = temp->next;
-		temp->next = new_end;
+	while (temp->next)
+		temp = temp->next;
+	temp->next = new_end;
 	return (new_end);
 }
