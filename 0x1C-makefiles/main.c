@@ -1,9 +1,9 @@
-#include "main.h"
+#include "m.h"
 
 /**
  * main - Entry point
  *
- * Return: Always success
+ * Return: Always 
  */
 int main(void)
 {

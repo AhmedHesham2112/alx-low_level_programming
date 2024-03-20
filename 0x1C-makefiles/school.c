@@ -1,7 +1,7 @@
-#include "main.h"
+#include "m.h"
 
 /**
- * print_school - prints the following.
+ * print_school
  *
  * Return: Nothing
  */
