@@ -9,6 +9,8 @@
         "optional": "c",
         "string_view": "c",
         "string": "c",
-        "system_error": "c"
+        "system_error": "c",
+        "stdlib.h": "c",
+        "search_algos.h": "c"
     }
 }
